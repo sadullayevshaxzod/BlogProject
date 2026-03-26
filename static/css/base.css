@@ -24,13 +24,13 @@ header {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* TITLE */
+/* HEADER TITLE */
 header h1 {
     font-size: 28px;
     font-weight: 600;
 }
 
-/* LINK */
+/* HEADER LINK */
 header a {
     text-decoration: none;
     color: white;
@@ -40,20 +40,19 @@ header a {
     transition: 0.3s;
 }
 
-/* HOVER EFFECT */
 header a:hover {
     background: white;
     color: #007bff;
 }
 
-/* CONTENT */
+/* CONTENT CONTAINER */
 .container {
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
 }
 
-/* CARD (postlar uchun) */
+/* CARD */
 .card {
     background: white;
     padding: 20px;
@@ -67,13 +66,18 @@ header a:hover {
     transform: translateY(-5px);
 }
 
-/* TITLE */
+/* CARD TITLE */
 .card h2 {
     color: #007bff;
     margin-bottom: 10px;
 }
 
-/* TEXT */
+/* CARD TEXT */
 .card p {
     color: #555;
+}
+
+/* FORM (tugma dizayni yo‘q) */
+form {
+    margin-bottom: 20px;
 }
