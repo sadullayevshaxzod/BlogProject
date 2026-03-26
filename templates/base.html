@@ -12,6 +12,14 @@
         <h1><a href="{% url 'home' %}">Bosh sahifa</a></h1>
         
     </header>
+       {% if user.is_authenticated %}
+       <p>Xush kelibsiz {{user.username}}</p>
+       <form action="{% url 'logout' %}" method="post">{% csrf_token %}
+        <button type="submit">Saytdan chiqish</button>
+       </form>
+       {% else %}
+       <a href="{% url 'login' %}">Saytga kirish</a>
+       {% endif %}
     {% block content %}
     {% endblock content %}
     <footer>
